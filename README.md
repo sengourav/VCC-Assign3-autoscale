@@ -1,4 +1,4 @@
-# VCC Assignment 3: Web Application Autoscaling
+# Web Application Autoscaling
 
 **Author:** Gourav Sen (M24CSA011)
 
@@ -49,7 +49,7 @@ This project demonstrates autoscaling and live migration of a containerized web 
 
 ## Setup Instructions
 
-1. Set up the local Lubuntu VM in VirtualBox
+1. Set up the local Lubuntu VM in VirtualBox. It contains script for downloading GCP SDK and other packages/libraries such as python3, python-pip,etc
    ```bash
    ./scripts/setup_local_vm.sh
    ```
