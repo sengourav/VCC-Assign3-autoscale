@@ -1,13 +1,31 @@
-SSH Rule:
-- Name: SSH
-- Protocol: TCP
-- Host IP: 127.0.0.1
-- Host Port: 2222
-- Guest Port: 22
+# VirtualBox Port Forwarding Configuration for Lubuntu VM
+# Used for auto-scaling project to allow connectivity to the local VM
 
-Web Application Rule:
-- Name: WebApp
-- Protocol: TCP
-- Host IP: 127.0.0.1
-- Host Port: 8080
-- Guest Port: 80
+# Configuration for SSH Access
+Name: SSH
+Protocol: TCP
+Host IP: 127.0.0.1
+Host Port: 2222
+Guest IP: 
+Guest Port: 22
+
+# Configuration for Web Application Access
+Name: WebApp
+Protocol: TCP
+Host IP: 127.0.0.1
+Host Port: 8080
+Guest IP: 
+Guest Port: 80
+
+# How to set up these port forwarding rules in VirtualBox:
+# 1. Select the VM in VirtualBox Manager
+# 2. Click on "Settings"
+# 3. Navigate to "Network" > "Adapter 1"
+# 4. Ensure "Attached to" is set to "NAT"
+# 5. Click on "Advanced" to expand additional options
+# 6. Click on "Port Forwarding"
+# 7. Add the rules as specified above
+
+# After adding these rules:
+# - SSH into the VM using: ssh username@127.0.0.1 -p 2222
+# - Access the web application from host browser: http://127.0.0.1:8080
