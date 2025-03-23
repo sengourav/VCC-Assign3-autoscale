@@ -1,0 +1,13 @@
+SSH Rule:
+- Name: SSH
+- Protocol: TCP
+- Host IP: 127.0.0.1
+- Host Port: 2222
+- Guest Port: 22
+
+Web Application Rule:
+- Name: WebApp
+- Protocol: TCP
+- Host IP: 127.0.0.1
+- Host Port: 8080
+- Guest Port: 80
