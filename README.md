@@ -1,5 +1,8 @@
+# VCC Assignment 3: Web Application Autoscaling
 
-Autoscaling a web application from a local VM to GCP when resource usage reaches 75%, followed by live migration back to the local machine when load decreases.
+**Author:** Gourav Sen (M24CSA011)
+
+This repository contains the implementation for automatically scaling a web application from a local VM to Google Cloud Platform (GCP) based on resource utilization.
 
 ## Repository Structure
 
@@ -24,11 +27,7 @@ VCC-Assign3-autoscale/
 ```
 
 
-# VCC Assignment 3: Web Application Autoscaling
 
-**Author:** Gourav Sen (M24CSA011)
-
-This repository contains the implementation for automatically scaling a web application from a local VM to Google Cloud Platform (GCP) based on resource utilization.
 
 ## Project Overview
 
@@ -36,6 +35,10 @@ This project demonstrates autoscaling and live migration of a containerized web 
 - When CPU usage exceeds 75% on the local VM, the application is automatically scaled to GCP
 - When the load decreases below 40%, the application is migrated back to the local VM
 - The entire process is automated using bash scripts and Docker
+
+## Architecture diagram
+
+![architecture](https://github.com/user-attachments/assets/a89dd2db-c5db-4d50-8a40-9de187cca1f0)
 
 ## Prerequisites
 
@@ -66,7 +69,7 @@ This project demonstrates autoscaling and live migration of a containerized web 
    ```bash
    cd app
    docker build -t webapp .
-   docker run -d -p 80:80 --name container webapp
+   docker run -d  --name container -p 80:80 webapp
    ```
 
 5. Run the autoscaling script
