@@ -85,7 +85,7 @@ This project demonstrates autoscaling and live migration of a containerized web 
 
 ## Demo
 
-For a video demonstration, visit [this link](https://drive.google.com/drive/folders/17_SxUF_noejwMWdBEZ0-EldxOiuTXHCn?usp=sharing)
+For a video demonstration, visit [this link](https://drive.google.com/file/d/1z9s3p3XFhM1Or31SdXaF7KKqmIBPMwGW/view?usp=drive_link)
 
 ## Repository Structure Explanation
 
