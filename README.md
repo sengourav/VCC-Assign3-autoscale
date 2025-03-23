@@ -11,11 +11,10 @@ VCC-Assign3-autoscale/
 ├── README.md                  # Project documentation
 ├── app/                       # Web application files
 │   ├── app.py                 # Flask application with CPU loading endpoints
-│   ├── requirements.txt       # Python dependencies
 │   └── Dockerfile             # Docker configuration for the web app
 ├── scripts/                   # Automation scripts
 │   ├── autoscale.sh           # Main autoscaling script
-│   ├── setup_local_vm.sh      # Script to set up the local Lubuntu VM
+│   ├── setup_local_vm.sh      # Set up the local VM (installing python and related packages) and download GCP SDK
 │   └── install_docker.sh      # Script to install Docker on the VM
 ├── config/                    # Configuration files
 │   ├── port_forwarding.txt    # VirtualBox port forwarding configuration
@@ -86,6 +85,12 @@ This project demonstrates autoscaling and live migration of a containerized web 
 ## Demo
 
 For a video demonstration, visit [this link](https://drive.google.com/file/d/1z9s3p3XFhM1Or31SdXaF7KKqmIBPMwGW/view?usp=drive_link)
+ - Generate load: http://127.0.0.1:8080/load 
+![image](https://github.com/user-attachments/assets/0ef3f215-21c4-440d-b16a-304a6fbe84a2)
+- Stop the load: http://127.0.0.1:8080/stop
+  ![image](https://github.com/user-attachments/assets/f079f6bd-cdfa-4254-90be-cd3c7adcadc7)
+
+
 
 ## Repository Structure Explanation
 
@@ -93,7 +98,3 @@ For a video demonstration, visit [this link](https://drive.google.com/file/d/1z9
 - `scripts/`: Contains automation scripts for setup and monitoring
 - `config/`: Configuration files for the project
 - `docs/`: Project documentation and images
-
-## License
-
-MIT
